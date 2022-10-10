@@ -33,10 +33,10 @@ body {
 }
 
 
-/* CARRUSEL */
+/* CARRUSEL MAIN */
 
 .carousel img {
-    max-width: 1920px;
+    max-width: 100%;
     max-height: 880px;
 }
 
@@ -48,20 +48,22 @@ body {
 
 
 
-/* GRID CONTENIDO */
+/* MAIN CONTENIDO */
 
 
 .grid-contenido {
+    padding-top: 10px;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgb(184, 184, 184) 0%, rgba(221,224,230,1) 38%, rgba(194,203,209,1) 57%, rgba(195,195,195,1) 73%, rgba(153,152,152,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contenedor {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0rem 10rem;
-    padding: 0rem 5rem;
 }
 
 .contenedor img {
@@ -69,6 +71,11 @@ body {
     height: 500px;
 }
 
+.mini-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .mini-contenedor a{
     font-size: 50px;
@@ -80,85 +87,142 @@ body {
     width: 700px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
 
-    .contenedor img{
-        max-width: 500px;
-        max-height: 300px;   
+    .grid-contenido{
+        padding: 5% 50%;
     }
 
-    .contenedor{
-        flex-direction: column;
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 30%;
     }
 
+    .contenedor img {
+        width: 400px;
+        height: auto;
+        margin-right: 10%;
+    }
+    
     .mini-contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
 
-    .mini-contenedor p {
-        max-width: 500px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    .contenedor img{
-        max-width: 300px;
-        max-height: 200px;   
-    }
-
-    .contenedor{
-        flex-direction: column;
-    }
-
-    .mini-contenedor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .mini-contenedor a {
-        font-size: 30px;
-    }
-
-    .mini-contenedor p {
-        max-width: 300px;
-    }
-}
-
-@media screen and (max-width: 400px) {
-
-    .contenedor img{
+    .mini-contenedor a{
+        text-align: center;
+        align-items: flex-start;
+        font-size: 25px;
+        color: black;
+        text-decoration: none;
         max-width: 250px;
-        max-height: 130px;
-        margin-right: 150px;
     }
+    
+    .mini-contenedor p{
+        font-size: 15px;
+        max-width: 250px;
+    }
+}
 
-    .contenedor{
+@media screen and (max-width: 900px) {
+
+    .contenedor {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        margin-right: 30%;
     }
 
+    .contenedor img {
+        height: auto;
+        margin-right: 10%;
+    }
+    
     .mini-contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        margin-right: 150px;
     }
-
-    .mini-contenedor a {
-        font-size: 35px;
+    .mini-contenedor a{
+        text-align: center;
+        align-items: flex-start;
+        font-size: 30px;
+        color: black;
+        text-decoration: none;
+        max-width: 280px;
     }
-
-    .mini-contenedor p {
-        max-width: 200px;
+    
+    .mini-contenedor p{
         font-size: 15px;
+        max-width: 280px;
     }
 }
+
+@media screen and (max-width: 610px) {
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30%;
+    }
+
+    .contenedor img {
+        width: 300px;
+        height: auto;
+    }
+    
+    .mini-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mini-contenedor a{
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        max-width: 200px;
+    }
+    
+    .mini-contenedor p{
+        font-size: 10px;
+        max-width: 180px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* TIENDA CONTENIDO */
 
@@ -171,11 +235,6 @@ body {
 .cayenne-contenido img {
     max-width: 1100px;
     max-height: 500px;
-    margin-left: 100px;
-}
-
-.cayenne {
-    padding-left: 170px;
 }
 
 .texto a {
@@ -190,6 +249,62 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width: 1440px) {
+
+    .tienda-contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-row img{
+        max-width: 500px;
+        max-height: 400px;
+    }
+
+    .texto a {
+        font-size: 35px;
+    }
+
+    .texto p {
+        font-size: 15px;
+        max-width: 400px;
+    }
+  
+}
+
+@media screen and (max-width: 900px) {
+
+    .tienda-contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-row img{
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+    .texto a {
+        font-size: 30px;
+    }
+
+    .texto p {
+        font-size: 10px;
+        max-width: 300px;
+    }
+  
+}
+
+@media screen and (max-width: 610px) {
+    .flex-row {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+
+
 /* PORSCHE UY  */
 
 .carousel-porscheuy {
@@ -198,30 +313,20 @@ body {
 
 .porsche-uy {
     display: grid;
-    grid-template-columns: 90%;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(221,224,230,1) 38%, rgba(194,203,209,1) 57%, rgba(195,195,195,1) 73%, rgba(153,152,152,1) 100%);
 }
 
 .contenido {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
 }
 
 .contenido p {
     max-width: 600px;
     font-size: 15px;
-}
-
-.contenido-texto {
-    padding: 0px 120px;
-}
-
-.vw-logo {
-    margin-left: 500px;
 }
 
 .vw-logo img {
@@ -230,4 +335,30 @@ body {
 }
 
 
+@media screen and (max-width: 610px) {
+
+    .porsche-uy-contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-1-imagen img {
+        max-width: 300px;
+        max-height: 100px;
+    }
+
+    .contenido-texto h1{
+        font-size: 50px;
+        max-width: 300px;
+    }
+
+    .contenido-texto h2{
+        font-size: 30px;
+    }
+
+    .contenido-texto p {
+        font-size: 8px;
+    }
+}
 
