@@ -1,14 +1,14 @@
-/* FONT-FAMILY */
+/* ------------------------------------------ FONT-FAMILY --------------------------------------*/
 * {
     font-family: "Poppins", sans-serif;
 }
 
-/* NO SIDE-SCROLL */
+/* ------------------------------------------ NO SIDE-SCROLL ---------------------------------- */
 body {
     overflow-x: hidden;
 }
 
-/* NAVBAR */
+/* ------------------------------------------ NAVBAR ESTILOS ------------------------------------------ */
 
 .navbar img {
     max-width: 100px;
@@ -32,8 +32,7 @@ body {
     margin-left: 15px;
 }
 
-
-/* CARRUSEL MAIN */
+/* ------------------------------------------ INDEX ESTILOS ---------------------------------- */
 
 .carousel img {
     max-width: 100%;
@@ -45,11 +44,6 @@ body {
     bottom: 60px;
     left: 890px;
 }
-
-
-
-/* MAIN CONTENIDO */
-
 
 .grid-contenido {
     padding-top: 10px;
@@ -194,37 +188,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* TIENDA CONTENIDO */
+/* ------------------------------------------TIENDA ESTILOS ----------------------------------- */
 
 
 .tienda-contenido {
@@ -305,60 +269,180 @@ body {
 }
 
 
-/* PORSCHE UY  */
+/* ----------------------------------------------- PORSCHE UY ESTILOS --------------------------------.-- */
 
 .carousel-porscheuy {
+    max-width: 100%;
     max-height: 750px;
 }
 
 .porsche-uy {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(221,224,230,1) 38%, rgba(194,203,209,1) 57%, rgba(195,195,195,1) 73%, rgba(153,152,152,1) 100%);
 }
 
-.contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.porsche-uy-contenido {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+    "h2 img"
+    "p img";
+    padding: 30px 15px;
 }
 
-.contenido p {
+.porsche-uy-contenido h1{
+    grid-area: h2;
+    margin-left: 30px;
+}
+
+.porsche-uy-contenido h2{
+    grid-area: h2;
+    margin-left: 30px;
+}
+
+.porsche-uy-contenido p{
+    grid-area: p;
+    margin-left: 30px;
+}
+
+.porsche-uy-contenido img{
+    grid-area: img;
     max-width: 600px;
-    font-size: 15px;
-}
-
-.vw-logo img {
-    max-width: 200px;
-    max-height: 200px;
+    max-height: 300px;
+    margin-left: 200px;
+    margin-top: 80px;
 }
 
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 1440px) {
+    .porsche-uy-contenido {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
 
+    .porsche-uy-contenido img{
+        margin-left: 35px ;
+        margin-bottom: 30px;
+    }
+
+    .porsche-uy-contenido h1{
+        font-size: 35px;
+    }
+
+    .porsche-uy-contenido h2 {
+        font-size: 35px;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
     .porsche-uy-contenido {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
-    .contenido-1-imagen img {
-        max-width: 300px;
-        max-height: 100px;
+    .porsche-uy-contenido img{
+        display: none;
     }
 
-    .contenido-texto h1{
-        font-size: 50px;
-        max-width: 300px;
+    .porsche-uy-contenido h1{
+        font-size: 35px;
     }
-
-    .contenido-texto h2{
-        font-size: 30px;
-    }
-
-    .contenido-texto p {
-        font-size: 8px;
+    .porsche-uy-contenido h2 {
+        font-size: 35px;
     }
 }
 
+
+/* -------------------------------------- GALERIA ESTILOS ------------------------------------ */
+
+.carousel-caption {
+    bottom: 4rem;
+}
+
+/* PERDON ME QUEDE SIN IDEAS jeje */
+
+
+/* -------------------------------------- CONTACTO ESTILOS ------------------------------------ */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    background-image: url(../media/porsche-contacto.jpg);
+    background-size: 100% 1000px;
+    background-repeat: no-repeat;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    height: 1000px;
+}
+
+.formulario h1 {
+    display: flex;
+    color: rgb(248, 248, 248);
+    font-size: 40px;
+    justify-content: center;
+}
+
+.formulario input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.formulario button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 425px) {
+    .formulario {
+        background-size: 100% 500px;
+        background-repeat: no-repeat;
+    }
+
+    .formulario form {
+        padding: 5px;
+        height: 300px;
+    }
+
+    .formulario h1 {
+        color: rgb(248, 248, 248);
+        font-size: 30px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .formulario {
+        background-size: 100% 500px;
+        background-repeat: no-repeat;
+    }
+
+    .formulario form {
+        padding: 5px;
+        height: 300px;
+    }
+
+    .formulario h1 {
+        color: rgb(248, 248, 248);
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .formulario input {
+        max-width: 250px;
+    }
+
+    .formulario textarea {
+        max-width: 250px;
+    }
+}
