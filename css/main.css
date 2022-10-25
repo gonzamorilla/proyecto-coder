@@ -1,448 +1,291 @@
-/* ------------------------------------------ FONT-FAMILY --------------------------------------*/
-* {
-    font-family: "Poppins", sans-serif;
-}
-
-/* ------------------------------------------ NO SIDE-SCROLL ---------------------------------- */
-body {
-    overflow-x: hidden;
-}
-
-/* ------------------------------------------ NAVBAR ESTILOS ------------------------------------------ */
-
-.navbar img {
-    max-width: 100px;
-    max-height: 100px;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-
-#navbarNav {
-    padding: 0px 30px;
-    font-size: 18px;
-    color: rgb(5, 5, 5);
-}
-
-#imgNav {
-    margin-left: 15px;
-}
-
-/* ------------------------------------------ INDEX ESTILOS ---------------------------------- */
-
 .carousel img {
-    max-width: 100%;
-    max-height: 880px;
-}
+  max-width: 100%;
+  max-height: 880px; }
 
-.carousel-inner a{
-    position: absolute;
-    bottom: 60px;
-    left: 890px;
-}
+.carousel-inner a {
+  position: absolute;
+  bottom: 60px;
+  left: 890px; }
 
-.grid-contenido {
-    padding-top: 10px;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgb(184, 184, 184) 0%, rgba(221,224,230,1) 38%, rgba(194,203,209,1) 57%, rgba(195,195,195,1) 73%, rgba(153,152,152,1) 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+.flex-contenido {
+  padding-top: 10px;
+  background: linear-gradient(180deg, white 0%, #c3c4c6 38%, #b4b6b7 57%, #959696 73%);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .contenedor {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.contenedor img {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .contenedor img {
     width: 800px;
-    height: 500px;
-}
+    height: 500px; }
+  .contenedor h1 {
+    font-size: 40px; }
+  .contenedor h2 {
+    font-size: 40px; }
 
 .mini-contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mini-contenedor a{
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .mini-contenedor a {
     font-size: 50px;
     color: black;
-    text-decoration: none;
-}
-
-.mini-contenedor p{
-    width: 700px;
-}
-
-@media screen and (max-width: 1440px) {
-
-    .grid-contenido{
-        padding: 5% 50%;
-    }
-
-    .contenedor {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-right: 30%;
-    }
-
-    .contenedor img {
-        width: 400px;
-        height: auto;
-        margin-right: 10%;
-    }
-    
-    .mini-contenedor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .mini-contenedor a{
-        text-align: center;
-        align-items: flex-start;
-        font-size: 25px;
-        color: black;
-        text-decoration: none;
-        max-width: 250px;
-    }
-    
-    .mini-contenedor p{
-        font-size: 15px;
-        max-width: 250px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-
-    .contenedor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 30%;
-    }
-
-    .contenedor img {
-        height: auto;
-        margin-right: 10%;
-    }
-    
-    .mini-contenedor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .mini-contenedor a{
-        text-align: center;
-        align-items: flex-start;
-        font-size: 30px;
-        color: black;
-        text-decoration: none;
-        max-width: 280px;
-    }
-    
-    .mini-contenedor p{
-        font-size: 15px;
-        max-width: 280px;
-    }
-}
-
-@media screen and (max-width: 610px) {
-
-    .contenedor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-right: 30%;
-    }
-
-    .contenedor img {
-        width: 300px;
-        height: auto;
-    }
-    
-    .mini-contenedor {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .mini-contenedor a{
-        font-size: 15px;
-        color: black;
-        text-decoration: none;
-        max-width: 200px;
-    }
-    
-    .mini-contenedor p{
-        font-size: 10px;
-        max-width: 180px;
-    }
-}
-
-
-/* ------------------------------------------TIENDA ESTILOS ----------------------------------- */
-
+    text-decoration: none; }
+  .mini-contenedor p {
+    width: 700px; }
 
 .tienda-contenido {
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(221,224,230,1) 38%, rgba(194,203,209,1) 57%, rgba(195,195,195,1) 73%, rgba(153,152,152,1) 100%);
-}
+  background: linear-gradient(180deg, white 0%, #c3c4c6 38%, #b4b6b7 57%, #959696 73%); }
 
 .cayenne-contenido img {
-    max-width: 1100px;
-    max-height: 500px;
-}
+  max-width: 1100px;
+  max-height: 500px; }
 
 .texto a {
-    text-decoration: none;
-    font-size: 70px;
-    color: black;
-}
+  text-decoration: none;
+  font-size: 70px;
+  color: black; }
 
 .flex-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-@media screen and (max-width: 1440px) {
-
-    .tienda-contenido {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .flex-row img{
-        max-width: 500px;
-        max-height: 400px;
-    }
-
-    .texto a {
-        font-size: 35px;
-    }
-
-    .texto p {
-        font-size: 15px;
-        max-width: 400px;
-    }
-  
-}
-
-@media screen and (max-width: 900px) {
-
-    .tienda-contenido {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .flex-row img{
-        max-width: 300px;
-        max-height: 200px;
-    }
-
-    .texto a {
-        font-size: 30px;
-    }
-
-    .texto p {
-        font-size: 10px;
-        max-width: 300px;
-    }
-  
-}
-
-@media screen and (max-width: 610px) {
-    .flex-row {
-        display: flex;
-        flex-direction: column !important;
-    }
-}
-
-
-/* ----------------------------------------------- PORSCHE UY ESTILOS --------------------------------.-- */
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
 
 .carousel-porscheuy {
-    max-width: 100%;
-    max-height: 750px;
-}
+  max-width: 100%; }
 
 .porsche-uy {
-    display: flex;
-    flex-direction: column;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(221,224,230,1) 38%, rgba(194,203,209,1) 57%, rgba(195,195,195,1) 73%, rgba(153,152,152,1) 100%);
-}
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, white 0%, #c3c4c6 38%, #b4b6b7 57%, #959696 73%); }
 
 .porsche-uy-contenido {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas:
-    "h2 img"
-    "p img";
-    padding: 30px 15px;
-}
-
-.porsche-uy-contenido h1{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "h2 img" "p img";
+  padding: 30px 15px; }
+  .porsche-uy-contenido h1 {
     grid-area: h2;
-    margin-left: 30px;
-}
-
-.porsche-uy-contenido h2{
+    margin-left: 30px; }
+  .porsche-uy-contenido h2 {
     grid-area: h2;
-    margin-left: 30px;
-}
-
-.porsche-uy-contenido p{
+    margin-left: 30px; }
+  .porsche-uy-contenido p {
     grid-area: p;
-    margin-left: 30px;
-}
-
-.porsche-uy-contenido img{
+    margin-left: 30px; }
+  .porsche-uy-contenido img {
     grid-area: img;
     max-width: 600px;
     max-height: 300px;
     margin-left: 200px;
-    margin-top: 80px;
-}
-
-
-@media screen and (max-width: 1440px) {
-    .porsche-uy-contenido {
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-    }
-
-    .porsche-uy-contenido img{
-        margin-left: 35px ;
-        margin-bottom: 30px;
-    }
-
-    .porsche-uy-contenido h1{
-        font-size: 35px;
-    }
-
-    .porsche-uy-contenido h2 {
-        font-size: 35px;
-    }
-    
-}
-
-
-@media screen and (max-width: 768px) {
-    .porsche-uy-contenido {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .porsche-uy-contenido img{
-        display: none;
-    }
-
-    .porsche-uy-contenido h1{
-        font-size: 35px;
-    }
-    .porsche-uy-contenido h2 {
-        font-size: 35px;
-    }
-}
-
-
-/* -------------------------------------- GALERIA ESTILOS ------------------------------------ */
+    padding-top: 150px; }
 
 .carousel-caption {
-    bottom: 4rem;
-}
-
-/* PERDON ME QUEDE SIN IDEAS jeje */
-
-
-/* -------------------------------------- CONTACTO ESTILOS ------------------------------------ */
+  bottom: 4rem; }
 
 .formulario {
-    display: flex;
-    justify-content: center;
-    background-image: url(../media/porsche-contacto.jpg);
-    background-size: 100% 1000px;
-    background-repeat: no-repeat;
-}
-
-.formulario form {
+  display: flex;
+  justify-content: center;
+  background-image: url(../media/porsche-contacto.jpg);
+  background-size: 100% 1000px;
+  background-repeat: no-repeat; }
+  .formulario form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 15px;
-    height: 1000px;
-}
-
-.formulario h1 {
+    height: 1000px; }
+  .formulario h1 {
     display: flex;
-    color: rgb(248, 248, 248);
+    color: #f8f8f8;
     font-size: 40px;
-    justify-content: center;
-}
-
-.formulario input {
+    justify-content: center; }
+  .formulario input {
     margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.formulario button {
+    margin-bottom: 20px; }
+  .formulario button {
     margin-top: 10px;
-    margin-bottom: 20px;
-}
+    margin-bottom: 20px; }
 
-@media screen and (max-width: 425px) {
-    .formulario {
-        background-size: 100% 500px;
-        background-repeat: no-repeat;
-    }
+@media (min-width: 320px) and (max-width: 768px) {
+  .navbar img {
+    display: none; }
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contenedor img {
+    width: 320px;
+    height: 200px; }
+  .contenedor h1 {
+    font-size: 20px; }
+  .contenedor h2 {
+    font-size: 20px; }
+  .contenedor p {
+    max-width: 250px;
+    font-size: 12px; } }
 
-    .formulario form {
-        padding: 5px;
-        height: 300px;
-    }
+@media (min-width: 769px) and (max-width: 1440px) {
+  .contenedor img {
+    width: 450px;
+    height: 300px; }
+  .contenedor h1 {
+    font-size: 30px; }
+  .contenedor h2 {
+    font-size: 30px; }
+  .contenedor p {
+    max-width: 300px;
+    font-size: 15px; } }
 
-    .formulario h1 {
-        color: rgb(248, 248, 248);
-        font-size: 30px;
-        justify-content: center;
-    }
-}
+/* -------------- TIENDA ---------------- */
+@media (min-width: 320px) and (max-width: 768px) {
+  .flex-row {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center; }
+  .flex-row img {
+    max-width: 260px;
+    max-height: 200px; }
+  .texto p {
+    max-width: 240px;
+    font-size: 10px; }
+  .texto h1 {
+    font-size: 20px; }
+  .texto h2 {
+    font-size: 20px; } }
 
-@media screen and (max-width: 320px) {
-    .formulario {
-        background-size: 100% 500px;
-        background-repeat: no-repeat;
-    }
+@media (min-width: 769px) and (max-width: 1440px) {
+  .flex-row img {
+    max-width: 460px;
+    max-height: 300px; }
+  .texto p {
+    max-width: 780px;
+    font-size: 15px; }
+  .texto h1 {
+    font-size: 20px; }
+  .texto h2 {
+    font-size: 20px; } }
 
-    .formulario form {
-        padding: 5px;
-        height: 300px;
-    }
+/* -------------- PORSCHE UY ---------------- */
+@media (min-width: 320px) and (max-width: 768px) {
+  .porsche-uy-contenido {
+    display: flex;
+    flex-direction: column; }
+  .porsche-uy-contenido img {
+    display: none; }
+  .porsche-uy-contenido p {
+    font-size: 10px;
+    max-width: 240px; } }
 
-    .formulario h1 {
-        color: rgb(248, 248, 248);
-        font-size: 20px;
-        justify-content: center;
-    }
+@media (min-width: 769px) and (max-width: 1440px) {
+  .porsche-uy-contenido {
+    display: flex;
+    flex-direction: column; }
+  .porsche-uy-contenido img {
+    display: none; }
+  .porsche-uy-contenido p {
+    font-size: 20px;
+    max-width: 700px; } }
 
-    .formulario input {
-        max-width: 250px;
-    }
+/* -------------- CONTACTO --------------*/
+@media (min-width: 320px) and (max-width: 768px) {
+  .formulario {
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+  .formulario form {
+    padding: 5px;
+    max-width: 300px;
+    max-height: 300px; }
+  .formulario h1 {
+    font-size: 20px; } }
 
-    .formulario textarea {
-        max-width: 250px;
-    }
-}
+@media (min-width: 769px) and (max-width: 1440px) {
+  .formulario {
+    background-size: 100% 400px;
+    background-repeat: no-repeat;
+    padding-top: 16px; }
+  .formulario form {
+    height: 300px; }
+  .formulario h1 {
+    font-size: 30px; }
+  .formulario input {
+    max-width: 250px; }
+  .formulario textarea {
+    max-width: 250px; } }
+
+/* -------------- FOOTER ---------------- */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .p-footer {
+    display: none; }
+  h3 {
+    display: none; }
+  .footer-content img {
+    max-width: 100px;
+    max-height: 80px; }
+  .copyright p {
+    font-size: 8px; } }
+
+* {
+  font-family: "Poppins", sans-serif; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .navbar img {
+    max-width: 100px;
+    max-height: 100px; }
+
+#navbarNav {
+  padding: 0px 30px;
+  font-size: 18px;
+  color: #050505; }
+
+#imgNav {
+  margin-left: 15px; }
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 16px 32px;
+  background: rgba(18, 28, 47, 0.95); }
+  .footer-content img {
+    max-width: 200px;
+    max-height: 100px;
+    margin-bottom: 8px; }
+  .footer-content p {
+    max-width: 400px;
+    max-height: 200px;
+    color: white; }
+  .footer-content h3 {
+    color: white;
+    padding-top: 6px; }
+  .footer-content li {
+    text-decoration: none;
+    list-style: none; }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(9, 16, 29, 0.95); }
+  .copyright a {
+    color: white;
+    text-decoration: none;
+    padding-top: 8px;
+    font-size: 14px; }

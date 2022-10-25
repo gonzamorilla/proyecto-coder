@@ -1,132 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Porsche Uruguay - Contacto</title>
+  <title>Porsche Uruguay - Contacto</title>
 
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/main.css">
-    
-    <!-- FUENTE POPPINS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- KEYWORDS -->
 
-    <!-- ANIMACIONES LINK -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <meta name="keywords"
+    content="Porsche, Porsche Uruguay, Porsche UY, Porsche Cayenne, Porsche Taycan, Porsche 911, Porsche 918, Porsche RWB, Tienda Porsche, Porsche en venta, Automotora Porsche">
+
+  <!-- DESCRIPTION -->
+
+  <meta name="description" content="Informacion de contacto Porsche">
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- FUENTE POPPINS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- ANIMACIONES LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
 </head>
+
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          
-          <img src="../media/Porsche-logo.png" id="imgNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
+      <a href="../index.html"><img src="../media/porsche-logo.png" id="imgNav" alt="porsche logo"></a>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/tienda.html">Tienda</a>
-                    </li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/porsche.html">Porsche UY</a>
-                    </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tienda.html">Tienda</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/galeria.html">Galería</a>
-                    </li>
+          <li class="nav-item">
+            <a class="nav-link" href="porsche.html">Porsche UY</a>
+          </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- CONTACTO CONTENIDO -->
+          <li class="nav-item">
+            <a class="nav-link" href="galeria.html">Galería</a>
+          </li>
 
-    <div class="formulario">
-        <form>
-            <h1>Contactanos</h1>
-            <input name="nombre" placeholder="Tu nombre" class="nombre">
-            <input name="mail" placeholder="Mail" class="mail">
-            <textarea rows="4" cols="42 " name="mensaje" placeholder="Tu mensaje" class="mensaje"></textarea>
-            <button type="submit" class="btn btn-danger">Enviar</button>
-        </form>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTACTO CONTENIDO -->
+
+  <div class="formulario">
+    <form>
+      <h1>Contactanos</h1>
+      <input type="text" name="nombre" placeholder="Tu nombre" class="nombre">
+      <input type="email" name="mail" placeholder="Mail" class="mail" required>
+      <textarea type="text" rows="4" cols="42 " name="mensaje" placeholder="Tu mensaje" class="mensaje"></textarea>
+      <button type="submit" class="btn btn-danger">Enviar</button>
+    </form>
+  </div>
+
+  <!-- FOOTER -->
+
+  <div class="footer-content">
+    <a href="../index.html"><img src="../media/porsche-logo.png" alt="logo porsche"></a>
+
+    <div>
+      <h3 class="h3-footer">Porsche Uruguay</h3>
+      <p class="p-footer">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+      </p>
     </div>
 
-    <!-- FOOTER -->
+    <div class="menu">
 
-    <footer class="bg-dark text-white text-center text-lg-start">
+      <h3>Menú</h3>
 
-      <div class="container p-4">
-        
-        <div class="row">
+      <ul>
+        <li>
+          <a href="tienda.html" class="text-white">Tienda</a>
+        </li>
+        <li>
+          <a href="porsche.html" class="text-white">Porsche UY</a>
+        </li>
+        <li>
+          <a href="galeria.html" class="text-white">Galería</a>
+        </li>
+        <li>
+          <a href="contacto.html" class="text-white">Contacto</a>
+        </li>
+      </ul>
+    </div>
 
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Porsche Uruguay</h5>
-    
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-              voluptatem veniam, est atque cumque eum delectus sint!
-            </p>
-          </div>
+  </div>
 
-    
 
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="text-uppercase">Menú</h5>
-    
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-white">Tienda</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Porsche UY</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Galería</a>
-              </li>
-              <li>
-                <a href="#!" class="text-white">Contacto</a>
-              </li>
-            </ul>
-          </div>
+  <!-- Copyright -->
+  <div class="copyright">
+    <a href="porsche.html">
+      <p>© 2020 Copyright: Porsche UY</p>
+    </a>
+  </div>
+  <!-- Copyright -->
 
-  
-        </div>
-
-      </div>
-
-    
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white" href="#">Porsche UY</a>
-      </div>
-      <!-- Copyright -->
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
