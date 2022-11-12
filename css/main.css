@@ -1,3 +1,61 @@
+* {
+  font-family: "Poppins", sans-serif; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #cddbed; }
+  .navbar img {
+    max-width: 100px;
+    max-height: 100px; }
+
+#navbarNav {
+  padding: 0px 30px;
+  font-size: 18px;
+  color: #050505; }
+
+#imgNav {
+  margin-left: 15px; }
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 16px 32px;
+  background: rgba(18, 28, 47, 0.95); }
+  .footer-content img {
+    max-width: 200px;
+    max-height: 100px;
+    margin-bottom: 8px; }
+  .footer-content p {
+    max-width: 400px;
+    max-height: 200px;
+    color: white; }
+  .footer-content h3 {
+    color: white;
+    padding-top: 6px; }
+  .footer-content li {
+    text-decoration: none;
+    list-style: none; }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgba(9, 16, 29, 0.95); }
+  .copyright a {
+    color: white;
+    text-decoration: none;
+    padding-top: 8px;
+    font-size: 14px; }
+
 .carousel img {
   max-width: 100%;
   max-height: 880px; }
@@ -87,6 +145,16 @@
 .carousel-caption {
   bottom: 4rem; }
 
+.galeria-examples-1 {
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .galeria-examples-1 img {
+    max-width: 450px;
+    max-height: 450px;
+    padding: 0px 16px; }
+
 .formulario {
   display: flex;
   justify-content: center;
@@ -103,7 +171,9 @@
     display: flex;
     color: #f8f8f8;
     font-size: 40px;
-    justify-content: center; }
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.641);
+    border-radius: 15%; }
   .formulario input {
     margin-top: 10px;
     margin-bottom: 20px; }
@@ -113,7 +183,8 @@
 
 @media (min-width: 320px) and (max-width: 768px) {
   .navbar img {
-    display: none; }
+    max-width: 100px;
+    max-height: 100px; }
   .contenedor {
     display: flex;
     flex-direction: column;
@@ -127,22 +198,7 @@
     font-size: 20px; }
   .contenedor p {
     max-width: 250px;
-    font-size: 12px; } }
-
-@media (min-width: 769px) and (max-width: 1440px) {
-  .contenedor img {
-    width: 450px;
-    height: 300px; }
-  .contenedor h1 {
-    font-size: 30px; }
-  .contenedor h2 {
-    font-size: 30px; }
-  .contenedor p {
-    max-width: 300px;
-    font-size: 15px; } }
-
-/* -------------- TIENDA ---------------- */
-@media (min-width: 320px) and (max-width: 768px) {
+    font-size: 12px; }
   .flex-row {
     display: flex;
     flex-direction: column !important;
@@ -156,22 +212,7 @@
   .texto h1 {
     font-size: 20px; }
   .texto h2 {
-    font-size: 20px; } }
-
-@media (min-width: 769px) and (max-width: 1440px) {
-  .flex-row img {
-    max-width: 460px;
-    max-height: 300px; }
-  .texto p {
-    max-width: 780px;
-    font-size: 15px; }
-  .texto h1 {
     font-size: 20px; }
-  .texto h2 {
-    font-size: 20px; } }
-
-/* -------------- PORSCHE UY ---------------- */
-@media (min-width: 320px) and (max-width: 768px) {
   .porsche-uy-contenido {
     display: flex;
     flex-direction: column; }
@@ -179,20 +220,17 @@
     display: none; }
   .porsche-uy-contenido p {
     font-size: 10px;
-    max-width: 240px; } }
-
-@media (min-width: 769px) and (max-width: 1440px) {
-  .porsche-uy-contenido {
+    max-width: 240px; }
+  .galeria-examples-1 {
     display: flex;
-    flex-direction: column; }
-  .porsche-uy-contenido img {
-    display: none; }
-  .porsche-uy-contenido p {
-    font-size: 20px;
-    max-width: 700px; } }
-
-/* -------------- CONTACTO --------------*/
-@media (min-width: 320px) and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 2px; }
+    .galeria-examples-1 img {
+      max-width: 320px;
+      max-height: 320px;
+      padding: 0px 0px;
+      margin: 0px 0px; }
   .formulario {
     background-size: 100% 100%;
     background-repeat: no-repeat; }
@@ -204,6 +242,41 @@
     font-size: 20px; } }
 
 @media (min-width: 769px) and (max-width: 1440px) {
+  .contenedor img {
+    width: 450px;
+    height: 300px; }
+  .contenedor h1 {
+    font-size: 30px; }
+  .contenedor h2 {
+    font-size: 30px; }
+  .contenedor p {
+    max-width: 300px;
+    font-size: 15px; }
+  .flex-row img {
+    max-width: 460px;
+    max-height: 300px; }
+  .texto p {
+    max-width: 780px;
+    font-size: 15px; }
+  .texto h1 {
+    font-size: 20px; }
+  .texto h2 {
+    font-size: 20px; }
+  .porsche-uy-contenido {
+    display: flex;
+    flex-direction: column; }
+  .porsche-uy-contenido img {
+    display: none; }
+  .porsche-uy-contenido p {
+    font-size: 20px;
+    max-width: 700px; }
+  .galeria-examples-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .galeria-examples-1 img {
+      max-width: 260px;
+      max-height: 260px; }
   .formulario {
     background-size: 100% 400px;
     background-repeat: no-repeat;
@@ -229,63 +302,7 @@
     display: none; }
   .footer-content img {
     max-width: 100px;
-    max-height: 80px; }
+    max-height: 80px;
+    display: none; }
   .copyright p {
     font-size: 8px; } }
-
-* {
-  font-family: "Poppins", sans-serif; }
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; }
-  .navbar img {
-    max-width: 100px;
-    max-height: 100px; }
-
-#navbarNav {
-  padding: 0px 30px;
-  font-size: 18px;
-  color: #050505; }
-
-#imgNav {
-  margin-left: 15px; }
-
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 16px 32px;
-  background: rgba(18, 28, 47, 0.95); }
-  .footer-content img {
-    max-width: 200px;
-    max-height: 100px;
-    margin-bottom: 8px; }
-  .footer-content p {
-    max-width: 400px;
-    max-height: 200px;
-    color: white; }
-  .footer-content h3 {
-    color: white;
-    padding-top: 6px; }
-  .footer-content li {
-    text-decoration: none;
-    list-style: none; }
-
-.menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.copyright {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: rgba(9, 16, 29, 0.95); }
-  .copyright a {
-    color: white;
-    text-decoration: none;
-    padding-top: 8px;
-    font-size: 14px; }

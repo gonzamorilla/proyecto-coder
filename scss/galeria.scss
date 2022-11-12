@@ -1,7 +1,18 @@
-// ALERIA ESTILOS //
+// GALERIA ESTILOS //
 
 .carousel-caption {
     bottom: 4rem;
 }
 
-// PERDON ME QUEDE SIN IDEAS jeje //
+.galeria-examples-1 {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        max-width: 450px;
+        max-height: 450px;
+        padding: 0px 16px;
+    }
+}

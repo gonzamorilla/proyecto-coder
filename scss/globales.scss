@@ -1,0 +1,86 @@
+//FONT-FAMILY //
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+
+// NAVBAR ESTILOS //
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(205, 219, 237);
+
+    img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+#navbarNav {
+    padding: 0px 30px;
+    font-size: 18px;
+    color: rgb(5, 5, 5);
+}
+
+#imgNav {
+    margin-left: 15px;
+}
+
+
+// FOOTER //
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding: 16px 32px;
+
+    background: $background-footer;
+
+
+    img {
+        max-width: 200px;
+        max-height: 100px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        max-width: 400px;
+        max-height: 200px;
+        color: white;
+    }
+
+    h3 {
+        color: white;
+        padding-top: 6px;
+    }
+
+    li {
+        text-decoration: none;
+        list-style: none;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(9, 16, 29, 0.95);
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding-top: 8px;
+        font-size: 14px;
+    }
+}

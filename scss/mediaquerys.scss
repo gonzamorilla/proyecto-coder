@@ -1,10 +1,11 @@
 // MEDIAQUERYS  //
 
-// INDEX //
 @media (min-width: 320px) and (max-width: 768px) {
 
+    // INDEX
     .navbar img {
-        display: none
+        max-width: 100px;
+        max-height: 100px;
     }
 
     .contenedor {
@@ -30,30 +31,8 @@
         max-width: 250px;
         font-size: 12px;
     }
-}
 
-@media (min-width: 769px) and (max-width: 1440px) {
-    .contenedor img {
-        width: 450px;
-        height: 300px;
-    }
-
-    .contenedor h1 {
-        font-size: 30px;
-    }
-
-    .contenedor h2 {
-        font-size: 30px;
-    }
-
-    .contenedor p {
-        max-width: 300px;
-        font-size: 15px;
-    }
-}
-
-/* -------------- TIENDA ---------------- */
-@media (min-width: 320px) and (max-width: 768px) {
+    // TIENDA
 
     .flex-row {
         display: flex;
@@ -78,10 +57,80 @@
     .texto h2 {
         font-size: 20px;
     }
+
+    // PORSCHE-UY
+
+    .porsche-uy-contenido {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .porsche-uy-contenido img {
+        display: none;
+    }
+
+    .porsche-uy-contenido p {
+        font-size: 10px;
+        max-width: 240px;
+    }
+
+    // GALERIA
+
+    .galeria-examples-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2px;
+
+        img {
+            max-width: 320px;
+            max-height: 320px;
+
+            padding: 0px 0px;
+            margin: 0px 0px;
+        }
+    }
+
+    // CONTACTO
+
+    .formulario {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .formulario form {
+        padding: 5px;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .formulario h1 {
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {
 
+    // INDEX
+    .contenedor img {
+        width: 450px;
+        height: 300px;
+    }
+
+    .contenedor h1 {
+        font-size: 30px;
+    }
+
+    .contenedor h2 {
+        font-size: 30px;
+    }
+
+    .contenedor p {
+        max-width: 300px;
+        font-size: 15px;
+    }
+
+    // TIENDA
     .flex-row img {
         max-width: 460px;
         max-height: 300px;
@@ -100,27 +149,7 @@
         font-size: 20px;
     }
 
-}
-
-/* -------------- PORSCHE UY ---------------- */
-@media (min-width: 320px) and (max-width: 768px) {
-
-    .porsche-uy-contenido {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .porsche-uy-contenido img {
-        display: none;
-    }
-
-    .porsche-uy-contenido p {
-        font-size: 10px;
-        max-width: 240px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1440px) {
+    // PORSCHE-UY
 
     .porsche-uy-contenido {
         display: flex;
@@ -135,28 +164,22 @@
         font-size: 20px;
         max-width: 700px;
     }
-}
 
-/* -------------- CONTACTO --------------*/
+    // GALERIA
 
-@media (min-width: 320px) and (max-width: 768px) {
-    .formulario {
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+    .galeria-examples-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+            img{
+                max-width: 260px;
+                max-height: 260px;
+            }
     }
 
-    .formulario form {
-        padding: 5px;
-        max-width: 300px;
-        max-height: 300px;
-    }
+    // CONTACTO
 
-    .formulario h1 {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1440px) {
     .formulario {
         background-size: 100% 400px;
         background-repeat: no-repeat;
@@ -182,7 +205,6 @@
 }
 
 
-
 /* -------------- FOOTER ---------------- */
 
 @media screen and (max-width: 768px) {
@@ -203,6 +225,7 @@
     .footer-content img {
         max-width: 100px;
         max-height: 80px;
+        display: none;
     }
 
     .copyright p {
