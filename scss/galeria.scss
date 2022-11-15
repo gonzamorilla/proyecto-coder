@@ -4,15 +4,24 @@
     bottom: 4rem;
 }
 
-.galeria-examples-1 {
-    margin: 40px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+@mixin galeria-example ($margin, $display, $flex-direction, $justify-content) {
+    margin: $margin;
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
 
-    img {
-        max-width: 450px;
-        max-height: 450px;
-        padding: 0px 16px;
-    }
+.galeria-examples-1 {
+    @include galeria-example (40px 0px, flex, row, center)
+}
+
+
+@mixin galeria-example-img ($max-width, $max-height, $padding) {
+    max-width: $max-width;
+    max-height: $max-height;
+    padding: $padding;
+}
+
+.galeria-examples-1 img {
+    @include galeria-example-img(450px, -450px, 0px 16px)
 }

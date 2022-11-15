@@ -33,7 +33,7 @@
     max-width: 400px;
     max-height: 200px;
     color: white; }
-  .footer-content h3 {
+  .footer-content b {
     color: white;
     padding-top: 6px; }
   .footer-content li {
@@ -150,10 +150,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center; }
-  .galeria-examples-1 img {
-    max-width: 450px;
-    max-height: 450px;
-    padding: 0px 16px; }
+
+.galeria-examples-1 img {
+  max-width: 450px;
+  max-height: -450px;
+  padding: 0px 16px; }
 
 .formulario {
   display: flex;
@@ -167,7 +168,7 @@
     justify-content: center;
     padding: 15px;
     height: 1000px; }
-  .formulario h1 {
+  .formulario title {
     display: flex;
     color: #f8f8f8;
     font-size: 40px;
@@ -189,23 +190,23 @@
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .contenedor img {
-    width: 320px;
-    height: 200px; }
-  .contenedor h1 {
-    font-size: 20px; }
-  .contenedor h2 {
-    font-size: 20px; }
-  .contenedor p {
-    max-width: 250px;
-    font-size: 12px; }
+    .contenedor img {
+      width: 320px;
+      height: 200px; }
+    .contenedor h1 {
+      font-size: 20px; }
+    .contenedor h2 {
+      font-size: 20px; }
+    .contenedor p {
+      max-width: 250px;
+      font-size: 12px; }
   .flex-row {
     display: flex;
     flex-direction: column !important;
     align-items: center; }
-  .flex-row img {
-    max-width: 260px;
-    max-height: 200px; }
+    .flex-row img {
+      max-width: 260px;
+      max-height: 200px; }
   .texto p {
     max-width: 240px;
     font-size: 10px; }
@@ -216,11 +217,11 @@
   .porsche-uy-contenido {
     display: flex;
     flex-direction: column; }
-  .porsche-uy-contenido img {
-    display: none; }
-  .porsche-uy-contenido p {
-    font-size: 10px;
-    max-width: 240px; }
+    .porsche-uy-contenido img {
+      display: none; }
+    .porsche-uy-contenido p {
+      font-size: 10px;
+      max-width: 250px; }
   .galeria-examples-1 {
     display: flex;
     flex-direction: column;
@@ -234,12 +235,12 @@
   .formulario {
     background-size: 100% 100%;
     background-repeat: no-repeat; }
-  .formulario form {
-    padding: 5px;
-    max-width: 300px;
-    max-height: 300px; }
-  .formulario h1 {
-    font-size: 20px; } }
+    .formulario form {
+      padding: 5px;
+      max-width: 300px;
+      max-height: 300px; }
+    .formulario h1 {
+      font-size: 20px; } }
 
 @media (min-width: 769px) and (max-width: 1440px) {
   .contenedor img {
@@ -258,37 +259,37 @@
   .texto p {
     max-width: 780px;
     font-size: 15px; }
-  .texto h1 {
+  .texto .texto h1 {
     font-size: 20px; }
-  .texto h2 {
+  .texto .texto h2 {
     font-size: 20px; }
   .porsche-uy-contenido {
     display: flex;
     flex-direction: column; }
-  .porsche-uy-contenido img {
-    display: none; }
-  .porsche-uy-contenido p {
-    font-size: 20px;
-    max-width: 700px; }
+    .porsche-uy-contenido img {
+      display: none; }
+    .porsche-uy-contenido p {
+      font-size: 20px;
+      max-width: 700px; }
   .galeria-examples-1 {
     display: flex;
     flex-direction: row;
     align-items: center; }
     .galeria-examples-1 img {
       max-width: 260px;
-      max-height: 260px; }
+      max-height: 280px; }
   .formulario {
     background-size: 100% 400px;
     background-repeat: no-repeat;
     padding-top: 16px; }
-  .formulario form {
-    height: 300px; }
-  .formulario h1 {
-    font-size: 30px; }
-  .formulario input {
-    max-width: 250px; }
-  .formulario textarea {
-    max-width: 250px; } }
+    .formulario form {
+      height: 300px; }
+    .formulario h1 {
+      font-size: 30px; }
+    .formulario input {
+      max-width: 250px; }
+    .formulario textarea {
+      max-width: 250px; } }
 
 /* -------------- FOOTER ---------------- */
 @media screen and (max-width: 768px) {
@@ -296,13 +297,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    .footer-content img {
+      max-width: 100px;
+      max-height: 80px;
+      display: none; }
   .p-footer {
     display: none; }
   h3 {
-    display: none; }
-  .footer-content img {
-    max-width: 100px;
-    max-height: 80px;
     display: none; }
   .copyright p {
     font-size: 8px; } }
