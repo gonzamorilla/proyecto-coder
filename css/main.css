@@ -30,6 +30,7 @@
     max-height: 100px;
     margin-bottom: 8px; }
   .footer-content p {
+    margin-top: 14px;
     max-width: 400px;
     max-height: 200px;
     color: white; }
